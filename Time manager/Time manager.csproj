@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Time_manager</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Walrick-Openphone-Clock.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="clock.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="15.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="clock.png" />
+  </ItemGroup>
+
+</Project>

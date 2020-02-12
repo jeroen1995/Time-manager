@@ -1,0 +1,18 @@
+﻿<Window x:Class="Time_manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Time_manager"
+        mc:Ignorable="d"
+        Title="Time Manager" Height="223" Width="428"
+        ScrollViewer.CanContentScroll="True" Icon="clock.png">
+    <Grid>
+        <Button x:Name="StartStop" Background="LawnGreen" Click="StartStop_Click" Content="Start" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="Activiteit" HorizontalAlignment="Left" Margin="75,36,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Categorie" HorizontalAlignment="Left" Margin="214,36,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.491,0.522"/>
+        <TextBlock x:Name="OutputBox" Margin="10,91,10,10" TextWrapping="Wrap"/>
+        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Margin="369,59,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Window>
